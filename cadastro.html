@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Bell Bootstrap 4 Theme</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
+  <meta property="og:title" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:description" content="">
+
+  <!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="">
+
+  <!-- Favicon -->
+  <link href="img/favicon.ico" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,900" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: Bell
+    Theme URL: https://bootstrapmade.com/bell-free-bootstrap-4-template/
+    Author: BootstrapMade.com
+    Author URL: https://bootstrapmade.com
+  ======================================================= -->
+</head>
+
+<body>
+  <!-- Page Content
+    ================================================== -->
+  <!-- Header -->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <a href="index.html"><img src="img/logo_branca.png" alt="" title="" /></img></a>
+        <!-- Uncomment below if you prefer to use a text image -->
+        <!--<h1><a href="#hero">Bell</a></h1>-->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li><a href="index.html">Início</a></li>
+          <!-- <li><a href="#servicos">Serviços</a></li> -->
+          <li><a href="cadastro.html">Cadastrar</a></li>
+          <li><a href="#login">Login</a></li>
+        </ul>
+      </nav>
+      <!-- #nav-menu-container -->
+
+      <nav class="nav social-nav pull-right d-none d-lg-inline">
+        <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> <a href="#"><i class="fa fa-envelope"></i></a>
+      </nav>
+    </div>
+  </header>
+  <!-- #header -->
+
+  <!-- About -->
+
+  <section class="cadastro" id="cadastro">
+    <div class="container text-center">
+            <h1>Cadastro</h1>
+            <h3>Selecione o tipo de cadastro desejado</h3><br>
+        <div class="row">
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-8">
+              <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-paciente-tab" data-toggle="pill" href="#paciente" role="tab" aria-controls="#paciente" aria-selected="false">Paciente</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-instituicao-tab" data-toggle="pill" href="#instituicao" role="tab" aria-controls="#instituicao" aria-selected="false">Instituição</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-convenio-tab" data-toggle="pill" href="#convenio" role="tab" aria-controls="#convenio" aria-selected="false">Convênio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-adm-tab" data-toggle="pill" href="#adm" role="tab" aria-controls="#adm" aria-selected="false">Administrador</a>
+                </li>
+              </ul>
+              <div class="tab-content" id="pills-tabContent">
+
+                <!-- Cadastro de Paciente -->
+                <div class="tab-pane fade" id="paciente" role="tabpanel" aria-labelledby="pills-paciente-tab">
+                  <form>
+                    <div class="form-group form-paciente">
+                      <label>Nome:</label>
+                      <input type="text" class="form-control" id="nome-paciente" placeholder="Digite o seu nome" required>
+                      <div class="row">
+                        <div class="col-md-6 com-sm-12">
+                          <label>RG:</label>
+                          <input type="text" class="form-control" id="rg-paciente" placeholder="Informe seu RG" required>
+                          <label>Data de Nascimento:</label>
+                          <input type="date" class="form-control" id="data-nasc-paciente" required>
+                          <label>Tipo Sanguíneo:</label>
+                          <select class="form-control" id="tipo-sanguineo" required>
+                            <option> </option> 
+                            <option>A+</option>
+                            <option>A-</option>
+                            <option>B+</option>
+                            <option>B-</option>
+                            <option>AB+</option>
+                            <option>AB-</option>
+                            <option>O+</option>
+                            <option>O-</option>
+                          </select>
+                          <label>CEP:</label>
+                          <input type="text" class="form-control" id="cpf-paciente" maxlength="11" required>
+                        </div>
+                        <div class="col-md-6 com-sm-12">
+                          <label>CPF:</label>
+                          <input class="form-control" id="cpf-paciente" placeholder="Informe seu CPF" required>
+                          <label>Sexo:</label>
+                          <select class="form-control" id="sexo-paciente" required>
+                            <option> </option>
+                            <option>Feminino</option>
+                            <option>Masculino</option>
+                          </select>   
+                          <label>Problemas de Saúde:</label>
+                          <select class="form-control" id="problemas-saude">
+                            <option> </option>
+                            <option>Colesterol</option>
+                            <option>Diabetes</option>
+                            <option>Hipertensão</option>
+                            <option>Outros</option>
+                          </select>
+                          <label>UF:</label>
+                          <select class="form-control uf" required>
+                            <option> </option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                          </select>
+                        </div>
+                      </div>
+                      <label>Endereço:</label>
+                      <input type="text" class="form-control" id="end-paciente" required>
+                      
+                      <label>E-mail:</label>
+                      <input type="email" class="form-control" id="email-paciente" placeholder="Digite o seu e-mail" required>
+                      <div class="row">
+                          <div class="col-md-6 com-sm-12">
+                              <label>telefone:</label>
+                              <input type="text" class="form-control" id="tel-paciente">
+                              <label>Senha*:</label>
+                              <input type="password" class="form-control" id="senha-paciente" placeholder="Digite sua Senha" required>
+                          </div>
+                          <div class="col-md-6 com-sm-12">
+                              <label>Formas de pagamento:</label>
+                              <select class="form-control" id="forma-pagamento">
+                                  <option> </option>
+                                  <option>Dinheiro</option>
+                                  <option>Cartão</option>
+                              </select>
+                              <label>Confirmar Senha*:</label>
+                              <input type="password" class="form-control" id="confirmar-senha-paciente" placeholder="Confirme sua Senha" required>
+                          </div>
+                      </div>
+                      <div class="text-center">
+                          <button type="submit" id="cadastrar-paciente" class="btn btn-primary btn-cadastro">Cadastrar</button>
+                      </div>   
+                    </div>
+                  </form>
+                </div>
+                <div class="tab-pane fade" id="instituicao" role="tabpanel" aria-labelledby="pills-instituicao-tab">
+                  <form>
+                    <div class="form-group form-instituicao">
+                      <label>Nome Fantasia*:</label>
+                      <input type="text" class="form-control" id="instituicao-fantasia" placeholder="Digite o nome fantasia" required>
+                      <label>Razão Social*:</label>
+                      <input type="text" class="form-control" id="rs-instituicao" placeholder="Digite a razão social" required>
+                      <div class="row">
+                        <div class="col-md-6 col-xs-12 col-sm-12">
+                          <label>CNPJ*:</label>
+                          <input type="text" class="form-control cnpj" id="cnpj-instituicao" placeholder="Digite o CNPJ" required>
+                          <label>Data Abertura*:</label>
+                          <input type="date" class="form-control" id="dt-abertura-instituicao" required>
+                          <label>Senha*:</label>
+                          <input type="password" class="form-control" id="senha-instituicao" placeholder="Digite sua Senha" required>
+                        </div>
+                        <div class="col-md-6 col-xs-12 col-sm-12">
+                          <label>CEP*:</label>
+                          <input type="text" class="form-control" id="cep-instituicao" placeholder="Digite o CEP" required>
+                          <label>Telefone*:</label>
+                          <input type="text" class="form-control" id="tel-instituicao" placeholder="Digite o telefone para contato" required>
+                          <label>Confirmar Senha*:</label>
+                          <input type="password" class="form-control" id="confirmar-senha-instituicao" placeholder="Confirme sua Senha" required>
+                        </div>
+                      </div>
+                      <div class="text-center">
+                          <button type="submit" id="cadastrar-instituicao" class="btn btn-primary btn-cadastro">Cadastrar</button>
+                      </div> 
+                    </div>
+                  </form>          
+                </div>
+                <div class="tab-pane fade" id="convenio" role="tabpanel" aria-labelledby="pills-convenio-tab">
+                  <form>
+                      <div class="form-group form-convenio">
+                        <div class="row">
+                          <div class="col-md-6 col-xs-12 col-sm-12">
+                            <label>Nº de Registro ANS*:</label>
+                            <input type="text" class="form-control" id="num-ans-convenio" placeholder="Digite o Nº de Registro ANS" required>
+                            <label>Razão Social*:</label>
+                            <input type="text" class="form-control" id="rs-convenio" placeholder="Digite a Razão Social" required>
+                          </div>
+                          <div class="col-md-6 col-xs-12 col-sm-12">
+                            <label>CNPJ*:</label>
+                            <input type="text" class="form-control cnpj" id="cnpj-convenio" placeholder="Digite o CNPJ" required>
+                            <label>Nome Fantasia*:</label>
+                            <input type="text" class="form-control" id="convenio-fantasia" placeholder="Digite o nome fantasia" required>
+                          </div>
+                        </div>
+                        <label>Tipo de Cobertura*:</label>
+                        <input type="text" class="form-control" id="cobertura-convenio" placeholder="Digite o tipo de cobertura" required>
+                        <label>Abrangência*:</label>
+                        <input type="text" class="form-control" id="abrangencia-convenio" placeholder="Digite a abrangência" required>
+                        <div class="row">
+                          <div class="col-md-6 col-xs-12 col-sm-12">
+                            <label>Senha*:</label>
+                            <input type="password" class="form-control" id="senha-convenio" placeholder="Digite sua Senha" required>
+                          </div>
+                          <div class="col-md-6 col-xs-12 col-sm-12">
+                            <label>Confirmar Senha*:</label>
+                            <input type="password" class="form-control" id="senha-instituicao" placeholder="Confirme sua Senha" required>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="text-center">
+                          <button type="submit" id="cadastrar-convenio" class="btn btn-primary btn-cadastro">Cadastrar</button>
+                      </div>
+                  </form>      
+                </div>
+                <div class="tab-pane fade" id="adm" role="tabpanel" aria-labelledby="pills-adm-tab">
+                  <form>
+                    <div class="form-group form-adm">
+                      <div class="row">
+                        <div class="col-md-8 col-sm-12 col-xs-12">
+                          <label>Nome Completo*:</label>
+                          <input type="text" class="form-control" id="nome-adm" placeholder="Digite seu nome completo" required>
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-xs-12">
+                          <label>Data de Nascimento*:</label>
+                          <input type="date" class="form-control" id="dt-nasc-adm" required>
+                        </div>   
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6 col-xs-12 col-sm-12">
+                          <label>Identidade*: </label>
+                          <input type="text" class="form-control" id="id-adm" placeholder="Digite o Nº da sua identidade" required>
+                          <label>E-mail:</label>
+                          <input type="text" class="form-control" id="email-adm" placeholder="Digite seu E-mail" required>
+                          <label>Senha*:</label>
+                          <input type="password" class="form-control" id="senha-adm" placeholder="Digite sua Senha" required>
+                        </div>
+                        <div class="col-md-6 col-xs-12 col-sm-12">
+                          <label>CPF*: </label>
+                          <input type="text" class="form-control" id="cpf-adm" placeholder="Digite seu CPF" required> 
+                          <label>Telefone*:</label>
+                          <input type="text" class="form-control" id="tel-adm" placeholder="(xx) x xxxx-xxxx" required>
+                          <label>Confirmar Senha*:</label>
+                          <input type="password" class="form-control" id="confirmar-senha-adm" placeholder="Confirme sua Senha" required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="text-center">
+                      <button type="submit" id="cadastrar-adm" class="btn btn-primary btn-cadastro">Cadastrar</button>
+                    </div>
+                  </form>        
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+            </div>
+       </div>
+  </section>
+
+  <footer class="site-footer bottom">
+    <div class="bottom">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-6 col-xs-12 text-lg-left text-center">
+            <p class="copyright-text">
+              © Ame | 2018 | Todos os Direitos Reservados
+            </p>
+            <div class="credits">
+              <!--
+                All the links in the footer should remain intact.
+                You can delete the links only if you purchased the pro version.
+                Licensing information: https://bootstrapmade.com/license/
+                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Bell
+              -->
+              <!-- <a href="https://bootstrapmade.com/">Bootstrap Templates</a> by BootstrapMade -->
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-xs-12 text-lg-right text-center">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="index.html">Início</a>
+              </li>
+
+              <li class="list-inline-item">
+                <a href="#about">Sobre</a>
+              </li>
+
+              <li class="list-inline-item">
+                <a href="login.html">Login</a>
+              </li>
+
+              <li class="list-inline-item">
+                <a href="cadastro.html">Cadastrar</a>
+              </li>
+
+              <li class="list-inline-item">
+                <a href="#contact">Contato</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+  <a class="scrolltop" href="#"><span class="fa fa-angle-up"></span></a>
+
+
+  <!-- Required JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/tether/js/tether.min.js"></script>
+  <script src="lib/stellar/stellar.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/easing/easing.js"></script>
+  <script src="lib/stickyjs/sticky.js"></script>
+  <script src="lib/parallax/parallax.js"></script>
+  <script src="lib/lockfixed/lockfixed.min.js"></script>
+
+  <!-- Template Specisifc Custom Javascript File -->
+  <script src="js/custom.js"></script>
+
+  <script src="contactform/contactform.js"></script>
+
+</body>
+</html>
