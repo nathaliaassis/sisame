@@ -1,9 +1,16 @@
-/*
-    Theme Name: Bell
-    Theme URL: https://bootstrapmade.com/bell-free-bootstrap-4-template/
-    Author: BootstrapMade.com
-    Author URL: https://bootstrapmade.com
-*/
+/* Login Page */
+#link-senha{
+  float: right;
+  color: #199EB8;
+  cursor: pointer;
+}
+
+#link-senha:hover{
+  font-weight: 600;
+}
+
+
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", Helvetica, Arial, sans-serif;
 }
@@ -44,6 +51,13 @@ a {
 /* ==================================================
   Elements
   ================================================== */
+.modal-header, .modal-header>button{
+  background-color: #199EB8;
+  color: white
+}
+.modal-header>button:hover{
+  color: white;
+}
 .btn {
   background-color: #199EB8;
   font-family: "Roboto", Helvetica, Arial, sans-serif;
@@ -53,9 +67,10 @@ a {
   border-radius: 50px;
 }
 
-.btn:hover {
-  background-color:  rgb(79, 200, 224);
+.btn:hover, .btn-cadastro:hover{
+  background-color:  rgb(14, 76, 87);
   color: #fff;
+  border-color: transparent;
 }
 
 .btn:focus {
@@ -159,6 +174,12 @@ a:hover {
 
 .btn-about{
   margin-top: -15px;
+  border:none
+}
+.btn-about:hover{
+  color: white;
+  background-color:  rgb(14, 76, 87);
+  border: none
 }
 .tagline {
   font-family: "Raleway", Helvetica, Arial, sans-serif;
@@ -358,7 +379,6 @@ a:hover {
 
 #about h1{
   color: #199EB8;
-  margin-top: 60px;
 }
 #about h3{
   margin-top: 75px;
@@ -587,6 +607,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .cta {
   background-color: #199EB8;
   padding: 25px 0;
+  margin-top: 120px;
 }
 
 .cta h2 {
@@ -811,8 +832,13 @@ label{
 .nav-link::selection{
   background-color:  rgb(13, 50, 58);
 }
-.btn-cadastro{
+.btn-cadastro, .btn-logar{
   margin-top:15px;
+}
+
+.btn-logar{
+  margin-right: 72px;
+  margin-left: 65px;
 }
 
 /* ==================================================
