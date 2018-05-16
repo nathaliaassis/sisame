@@ -9,8 +9,6 @@
   font-weight: 600;
 }
 
-
-
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", Helvetica, Arial, sans-serif;
 }
@@ -89,9 +87,9 @@ a {
 }
 
 section {
-  padding: 85px;
-  padding-bottom: 110px;
-  padding-top: 140px;
+
+  padding-bottom: 80px;
+  padding-top: 100px;
 }
 
 .card {
@@ -563,10 +561,15 @@ body.mobile-nav-active #mobile-nav-toggle {
 .servicos h1 {
   color: #199EB8;
 }
+/* home paciente */
+.material-icons{
+  font-size: 40px;
+}
 
 .feature-col {
   display: table;
   padding-bottom: 45px;
+  cursor: pointer;
 }
 
 .feature-col > div > div {
@@ -584,11 +587,15 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 15px;
   background: #199EB8;
   color: #fff;
-  font-size: 24px;
+  font-size: 22px;
+  margin-left: 21px;
   text-align: center;
-  line-height: 70px;
+  line-height: 90px;
   border-radius: 50%;
   display: inline-block;
+}
+.feature-col:hover{
+  
 }
 
 .feature-col h3 {
@@ -838,7 +845,7 @@ label{
 
 .btn-logar{
   margin-right: 72px;
-  margin-left: 65px;
+  margin-left: 70px;
 }
 
 /* ==================================================

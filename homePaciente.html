@@ -33,6 +33,7 @@
 
     <!-- Libraries CSS Files -->
     <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- Main Stylesheet File -->
     <link href="css/style.css" rel="stylesheet">
@@ -53,13 +54,13 @@
                 <!-- Uncomment below if you prefer to use a text image -->
                 <!--<h1><a href="#hero">Bell</a></h1>-->
             </div>
-
+<!-- 
             <nav id="nav-menu-container">
                 <ul class="nav-menu">
                     <li>
                         <a href="index.html">Início</a>
                     </li>
-                    <!-- <li><a href="#servicos">Serviços</a></li> -->
+                    <!-- <li><a href="#servicos">Serviços</a></li> 
                     <li>
                         <a href="cadastro.html">Cadastrar</a>
                     </li>
@@ -67,80 +68,117 @@
                         <a href="#login">Login</a>
                     </li>
                 </ul>
-            </nav>
+            </nav> -->
             <!-- #nav-menu-container -->
 
             <nav class="nav social-nav pull-right d-none d-lg-inline">
-                <a href="#">
-                    <i class="fa fa-github"></i>
-                </a>
+                 <a href="#logout"> Sair</a>   
             </nav>
         </div>
     </header>
     <!-- #header -->
 
-    <!-- About -->
+<section class="features" id="features">
 
-    <section class="cadastro" id="cadastro">
-        <div class="container text-center">
-            <h1>Login</h1>
-            <div class="row">
-                <div class="col-md-4">
-                </div>
-                <div class="col-md-4">
-                    <form>
-                        <div class="form-group form-adm text-center">
-                            <label>CPF/CNPJ:</label>
-                            <input class="form-control" id="user-login" type="text" placeholder="Digite o CPF ou CNPJ" maxlength="12" required>
-                            <label>Password:</label>
-                            <input type="password" class="form-control" id="senha-login" placeholder="Password" required>
-                            <div class="form-check">
-                                <label class="form-check-label" style="margin-top: 0px !important;">Lembrar de mim</label>
-                                <input type="checkbox" class="form-check-input" id="lembrar-senha">
-                            </div>
-                            <a id="link-senha" data-toggle="modal" data-target="#modalEsqueciSenha" data-whatever="@mdo">Esqueci minha senha</a>
-                        </div>
-                        <button href="homePaciente.html" type="submit" id="logar" class="btn btn-full btn-logar">Iniciar</button>
-                    </form>
-                    <div class="text-center" style="margin-top: 40px;">
-                        <h4>Não possui cadastro?</h4>
-                        <button type="submit" id="logar" class="btn btn-cadastro">Criar Conta</button>
-                    </div>
-
-                </div>
-                <div class="col-md-4">
-                </div>
+    <div class="container">
+      <div class="row">
+        <div class="feature-col col-lg-4 col-xs-12">
+          <div class="card card-block text-center">
+            <div>
+              <div class="feature-icon">
+                <i class="material-icons"> assignment_ind</i>
+              </div>
             </div>
-            <!-- modal esqueci minha senha -->
-            <div class="modal fade" id="modalEsqueciSenha" tabindex="-1" role="dialog" aria-labelledby="modalEsqueciSenha" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="modal-title">Recuperar Senha</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <form>
-                                <div class="form-group">
-                                    <label class="col-form-label">CPF/CNPJ:</label>
-                                    <input type="text" class="form-control" id=" ">
-                                </div>
-                                <div class="form-group">
-                                    <label class="col-form-label">E-mail:</label>
-                                    <input type="text" class="form-control" id=" ">
-                                </div>
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-full" id="email-recuperar-senha">Enviar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </section>
 
+            <div>
+              <h3> Meus Dados </h3>
+
+              <p>
+                Dados Pessoais e Informações de login.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-col col-lg-4 col-xs-12">
+          <div class="card text-center">
+            <div>
+                <div class="feature-icon">
+                    <i class="material-icons">local_hospital</i>
+                  </div>
+            </div>
+
+            <div>
+              <h3>Lista de Hospitais e Clínicas</h3>
+              <p>Lista de hospitais registrados e informações gerais sobre eles.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-col col-lg-4 col-xs-12">
+          <div class="card card-block text-center">
+            <div>
+              <div class="feature-icon">
+                <i class="material-icons">location_on</i>
+              </div>
+            </div>
+            <div>
+              <h3>Localizar Hospitais e Clínicas</h3>
+              <p>Localize no mapa hospitais e clínicas mais próximos de você. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        
+        <div class="feature-col col-lg-4 col-xs-12">
+          <div class="card card-block text-center">
+            <div>
+              <div class="feature-icon">
+                  <i class="material-icons"> note_add</i>
+              </div>
+            </div>
+
+            <div>
+              <h3>Nova Solicitação de Atendimento</h3>
+              <p>Solicitar novo atendimento.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-col col-lg-4 col-xs-12">
+            <div class="card card-block text-center">
+              <div>
+                <div class="feature-icon">
+                    <i class="material-icons">history</i>
+                </div>
+              </div>
+  
+              <div>
+                <h3>Histórico</h3>
+                <p>Histórico de Atividades.</p>
+              </div>
+            </div>
+          </div>
+
+        <div class="feature-col col-lg-4 col-xs-12">
+          <div class="card card-block text-center">
+            <div>
+              <div class="feature-icon">
+                <i class="material-icons">forum</i>
+              </div>
+            </div>
+
+            <div>
+              <h3>Fale Conosco</h3>
+              <p>Tire suas dúvidas!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
     <footer class="site-footer bottom">
         <div class="bottom">
             <div class="container">
@@ -160,14 +198,6 @@
 
                             <li class="list-inline-item">
                                 <a href="#about">Sobre</a>
-                            </li>
-
-                            <li class="list-inline-item">
-                                <a href="login.html">Login</a>
-                            </li>
-
-                            <li class="list-inline-item">
-                                <a href="cadastro.html">Cadastrar</a>
                             </li>
 
                             <li class="list-inline-item">
