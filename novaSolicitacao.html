@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>SisAme</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
+  <meta property="og:title" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:description" content="">
+
+  <!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="">
+
+  <!-- Favicon -->
+  <link href="img/favicon.ico" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,900" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- Page Content
+    ================================================== -->
+  <!-- Header -->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <a href="index.html"><img src="img/logo_branca.png" alt="" title="" /></img></a>
+        <!-- Uncomment below if you prefer to use a text image -->
+        <!--<h1><a href="#hero">Bell</a></h1>-->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li><a href="index.html">Início</a></li>
+        </ul>
+      </nav>
+      <!-- #nav-menu-container -->
+
+      <nav class="nav social-nav pull-right d-none d-lg-inline">
+        <a href="https://github.com/nathaliaassis/sisame"><i class="fa fa-github"></i></a> 
+      </nav>
+    </div>
+  </header>
+  <!-- #header -->
+
+  <!-- About -->
+
+  <section class="cadastro" id="cadastro">
+    <div class="container text-center">
+            <h1>Solicitação de Atendimento</h1>
+        <div class="row">
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-8"> 
+                <form>
+                    <div class="form-group form-adm text-center">
+                        <label>Sintomas:</label> <!--n sei se vai ser select ou input mesmo-->
+                        <input class="form-control" id="sintomas" type="text" placeholder="Digite os Sintomas" required> 
+                        <label>Grau de intensidade</label>
+                        <input type="text" class="form-control" id="grau" placeholder="Digite o grau de intensidade" required>
+                        <label>Forma de pagamento:</label>
+                              <select class="form-control" id="forma-pagamento">
+                                <option> </option>
+                                <option>Dinheiro</option>
+                                <option>Cartão</option>
+                        </select>
+                        <label>Hospitais:</label>
+                        <select class="form-control" id="lista-hospital">
+                          <option> </option>
+                        </select>
+                        <label>Tempo estimado de chegada:</label>
+                        <input type="time" class="form-control" id="hora-chegada">
+                    
+                    </div> 
+                    <button href="" type="submit" id="enviar-solicitacao" class="btn btn-full btn-logar">Enviar</button>
+                </form>
+             
+            </div>
+            <div class="col-md-2">
+            </div>
+       </div>
+  </section>
+
+  <footer class="site-footer bottom">
+    <div class="bottom">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-6 col-xs-12 text-lg-left text-center">
+            <p class="copyright-text">
+              © Ame | 2018 | Todos os Direitos Reservados
+            </p>
+          </div>
+
+          <div class="col-lg-6 col-xs-12 text-lg-right text-center">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="index.html">Início</a>
+              </li>
+
+              <li class="list-inline-item">
+                <a href="#about">Sobre</a>
+              </li>
+
+              <li class="list-inline-item">
+                <a href="login.html">Login</a>
+              </li>
+
+              <li class="list-inline-item">
+                <a href="cadastro.html">Cadastrar</a>
+              </li>
+
+              <li class="list-inline-item">
+                <a href="#contact">Contato</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+  <a class="scrolltop" href="#"><span class="fa fa-angle-up"></span></a>
+
+
+  <!-- Required JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/tether/js/tether.min.js"></script>
+  <script src="lib/stellar/stellar.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/easing/easing.js"></script>
+  <script src="lib/stickyjs/sticky.js"></script>
+  <script src="lib/parallax/parallax.js"></script>
+  <script src="lib/lockfixed/lockfixed.min.js"></script>
+
+  <!-- Template Specisifc Custom Javascript File -->
+  <script src="js/custom.js"></script>
+
+  <script src="contactform/contactform.js"></script>
+
+</body>
+</html>
